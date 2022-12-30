@@ -20,7 +20,8 @@ variable "tags" {
 }
 
 variable "dfc_enable_standard_plan" {
-  type = object({
+  description = "Defines Defender for Cloud Settings"
+  type        = object({
     app_services        = bool
     container_registry  = bool
     key_vaults          = bool
@@ -48,4 +49,9 @@ variable "dfc_enable_standard_plan" {
     containers          = false
     dns                 = false
   }
+}
+
+variable "key_vault_secret_owner_group" {
+  description = "Defines group to give owner level access to key vault secrets"
+  type = string
 }
