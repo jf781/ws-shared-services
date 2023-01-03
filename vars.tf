@@ -14,7 +14,7 @@ variable "tags" {
   type = map
   default = {
     "BusinessUnit"            = "6030050003-01-059, 6030050003-30-059"
-    "CreationDate"            = "7/28/2022"
+    "CreationDate"            = "1/3/2023"
     "Env"                     = "shared-services"
   }
 }
