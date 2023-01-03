@@ -119,12 +119,11 @@ module "key_vault" {
         secret_value  = random_password.prodPwd.result
       }
     ]
-
-    lifecycle {
-      ignore_changes = [
-        key_vault_secrets,
-      ]
-    }
+    # lifecycle {
+    #   ignore_changes = [
+    #     key_vault_secrets,
+    #   ]
+    # }
 }
 
 resource "azurerm_monitor_diagnostic_setting" "key_vault" {
