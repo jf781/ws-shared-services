@@ -2,10 +2,10 @@
 # Variables for unmanaged resources
 #---------------------------------------------------------------
 
-variable "root_management_group" {
+variable "root_mgmt_group" {
   description = "The root management group to create the child management groups under"
   type        = string
-  default     = "Tenant Root Group"
+  # default     = "Tenant Root Group"
 }
 
 
