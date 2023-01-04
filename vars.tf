@@ -13,7 +13,7 @@ variable "tags" {
   description = "Tags to be applied to all resources that are part of the workspace."
   type = map
   default = {
-    "BusinessUnit"            = "6030050003-01-059, 6030050003-30-059"
+    "BusinessUnit"            = "4567"
     "CreationDate"            = "1/4/2023"
     "Env"                     = "shared-services"
   }
