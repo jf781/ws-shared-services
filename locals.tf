@@ -10,6 +10,7 @@ locals {
   org_abreviation     = "client"
   prefix              = "${var.tags["Env"]}"
   storageprefix       = "${local.org_abreviation}ss"
+  keyvaultprefix      = "kv-${local.org_abreviation}"
   time                = formatdate("DD-MMM-YYYY hh:mm:ss", timeadd(timestamp(), "-6h")) # UTC -6h = CST
   tags                = merge(var.tags, { "ModifiedDate" = local.time })
   vmadminusername     = "vmadminuser"

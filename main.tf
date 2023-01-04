@@ -104,7 +104,7 @@ module "key_vault" {
     location            = "${lookup(local.location_prefix_map, "cus")}"
     tags                = merge(local.tags, { "Region" = lookup(local.location_prefix_map, "cus") })
     key_vault = {
-      name                        = "kv-ss-mgmt-001"
+      name                        = "${local.keyvaultprefix}-mgmt-01"
       resource_group_name         = module.resource_group_mgmt.resource_group_name
       purge_protection_enabled    = true 
       secrets_owners              = var.key_vault_secret_owner_group
