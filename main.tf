@@ -112,7 +112,7 @@ module "key_vault" {
     key_vault_secrets = [
       {
         secret_name = local.vmadminusername
-        secret_value  = "berlinadmin"
+        secret_value  = "admin"
       },
       {
         secret_name = local.vmadminpassname
